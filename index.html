@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BGF Japão - Em Manutenção</title>
+  <title>BGF Japão</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="relative min-h-screen text-white font-sans">
-  
+
   <!-- Imagem de fundo -->
   <div 
     class="absolute inset-0 bg-cover bg-center"
@@ -15,16 +15,128 @@
   </div>
 
   <!-- Camada escura para contraste -->
-  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="absolute inset-0 bg-black bg-opacity-70"></div>
 
-  <!-- Conteúdo central -->
-  <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-      🚧 Site em Manutenção 🚧
-    </h1>
-    <p class="text-lg sm:text-xl md:text-2xl drop-shadow-md max-w-2xl">
-      Estamos atualizando nosso conteúdo.<br>Volte mais tarde 💜
-    </p>
+  <!-- Conteúdo -->
+  <div class="relative z-10">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md shadow-md z-20">
+      <div class="max-w-6xl mx-auto flex justify-center gap-6 py-4 text-sm md:text-base">
+        <a href="#quem" class="hover:text-purple-300">Quem sou eu</a>
+        <a href="#mercari" class="hover:text-purple-300">O que é o Mercari?</a>
+        <a href="#faco" class="hover:text-purple-300">O que eu faço</a>
+        <a href="#funciona" class="hover:text-purple-300">Como funciona</a>
+        <a href="#contato" class="hover:text-purple-300">Contato</a>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="flex flex-col justify-center items-center text-center min-h-screen px-6">
+      <img src="imagens/logo.png" alt="Logo BGF Japão" class="w-28 mb-4">
+      <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">BGF Japão</h1>
+      <p class="mt-3 text-lg md:text-xl max-w-2xl drop-shadow-md">
+        Seu acesso fácil e seguro ao Mercari Japão para fãs de K-pop
+      </p>
+    </header>
+
+    <!-- Seções -->
+    <main class="space-y-20 pb-20">
+
+      <section id="quem" class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-purple-300 mb-4">Quem sou eu</h2>
+        <p class="leading-relaxed">
+          Oi! Meu nome é Ale, tenho 30 anos e moro no Japão há 7 anos. <br><br>
+          Entrei no mundo do K-pop em 2022 e, desde então, ele se tornou uma grande paixão na minha vida. 
+          Meu grupo favorito é o BTS e meu utt é o Kim Namjoon. Comecei como fã, virei colecionadora e hoje ajudo outras pessoas a realizarem o sonho de montar suas coleções!
+          <br><br>
+          Atualmente, trabalho como intermediadora de compras no Mercari Japão, principalmente para fãs de K-pop que buscam álbuns, photocards e Merchs. 
+          Também administro, junto com uma amiga, uma conta de vendas de photocards (CEG).
+          <br><br>
+          Meu foco é tornar esse processo simples, seguro e acessível para todos. Se você encontrou algo no Mercari e não sabe como trazer até você, eu posso te ajudar! 
+          <b>De fã para fã, com carinho, cuidado e compromisso!</b>
+        </p>
+      </section>
+
+      <section id="mercari" class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-purple-300 mb-4">O que é o Mercari?</h2>
+        <p class="leading-relaxed">
+          O Mercari é um dos maiores marketplaces do Japão, onde vendedores particulares colocam à venda produtos novos e usados, como álbuns, photocards, roupas, eletrônicos e itens colecionáveis. 
+          <br><br>
+          É muito popular entre fãs de K-pop e colecionadores por oferecer produtos raros ou fora de catálogo. 
+          <b>No entanto, somente residentes no Japão podem comprar no Mercari, pois é necessário ter documento japonês.</b>
+        </p>
+      </section>
+
+      <section id="faco" class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-purple-300 mb-4">O que eu faço</h2>
+        <p class="leading-relaxed mb-4">
+          Atuo como intermediadora de compras no Mercari, especialmente para fãs de K-pop:
+        </p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>✔️ Você me envia o link do item que encontrou no Mercari</li>
+          <li>✔️ Eu faço a compra por você com minha conta japonesa</li>
+          <li>✔️ Recebo o produto aqui no Japão</li>
+          <li>✔️ Embalo com cuidado</li>
+          <li>✔️ Envio para você com rastreio internacional</li>
+          <li>✔️ Suporte 100% em português</li>
+        </ul>
+      </section>
+
+      <section id="funciona" class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-purple-300 mb-4">Como funciona meu serviço?</h2>
+        <p class="leading-relaxed mb-6">
+          Você encontra o item no Mercari e me envia o link.<br>
+          Eu calculo o valor total: item + taxa.<br>
+          Você faz o pagamento via Wise ou Pix com taxas (os planos mensais exigem Wise).<br>
+          Eu compro o produto e recebo aqui.<br>
+          Envio para o seu endereço com rastreio e cuidado.
+        </p>
+
+        <h3 class="text-xl font-semibold text-purple-200 mb-2">🛍️ Compra Única</h3>
+        <p class="mb-2">Você me envia todos os links de uma vez e eu calculo a taxa + frete:</p>
+        <ul class="list-disc list-inside mb-6">
+          <li>Até ¥3.000 → ¥2.500 + frete</li>
+          <li>De ¥3.001 a ¥10.000 → ¥3.500 + frete</li>
+          <li>De ¥10.001 a ¥24.000 → ¥5.500 + frete</li>
+          <li>Acima de ¥24.000 → 25% do valor total + frete</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-purple-200 mb-2">📦 Plano Mensal</h3>
+        <p class="mb-2">Você escolhe o valor da sua caixa mensal (ex: ¥10.000, ¥24.000...) e vai enviando links durante o mês. Eu compro até completar o valor da caixa.</p>
+        <ul class="list-disc list-inside mb-6">
+          <li>✅ Flexível</li>
+          <li>✅ Pode juntar compras menores</li>
+          <li>✅ Ideal para colecionadores ou quem quer economizar no frete</li>
+        </ul>
+
+        <p><b>📩 Para contratar o plano mensal, entre em contato comigo pelo privado.</b></p>
+
+        <h3 class="text-xl font-semibold text-purple-200 mt-8 mb-2">⚠️ Importante</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Você precisa me enviar o link exato do produto, não procuro itens.</li>
+          <li>A BGF JAPAN não se responsabiliza por falsificados, danos ou diferenças de descrição.</li>
+          <li>Envio de fotos extras após recebimento → ¥100 por foto/vídeo.</li>
+          <li>Pagamento sempre antecipado (produto + taxas).</li>
+          <li>Cliente responsável por frete, impostos e encargos aduaneiros.</li>
+          <li>Armazenamento gratuito: 60 dias corridos após entrada do produto.</li>
+        </ul>
+      </section>
+
+      <section id="contato" class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-purple-300 mb-6">Contato</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://wa.me/SEUNUMERO" target="_blank" class="bg-purple-700 hover:bg-purple-600 text-white px-6 py-3 rounded-full font-semibold">WhatsApp</a>
+          <a href="https://instagram.com/bgfjapao" target="_blank" class="bg-purple-700 hover:bg-purple-600 text-white px-6 py-3 rounded-full font-semibold">Instagram</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-6 text-sm text-purple-200">
+      © 2025 BGF Japão. Importações feitas com carinho de fã para fã 💜
+    </footer>
   </div>
 
 </body>
