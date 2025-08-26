@@ -5,14 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BGF Japan</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Padrão: PC e tablets → imagem responsiva (cover) */
+    .bg-custom {
+      background-image: url('imagens/bgfimagem.jpg');
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
+
+    /* Mobile → mantém tamanho original (contain) */
+    @media (max-width: 768px) {
+      .bg-custom {
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+      }
+    }
+  </style>
 </head>
 <body class="relative min-h-screen text-white font-sans">
 
-<!-- Imagem de fundo -->
-  <div 
-    class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-    style="background-image: url('imagens/bgfimagem.jpg');">
-  </div>
+  <!-- Imagem de fundo -->
+  <div class="absolute inset-0 bg-custom"></div>
 
   <!-- Conteúdo -->
   <div class="relative z-10">
@@ -38,6 +53,12 @@
         Seu acesso fácil e seguro ao Mercari Japão para fãs de K-pop
       </p>
     </header>
+
+    <!-- (todo o resto das seções que você já tem) -->
+
+  </div>
+</body>
+</html>
 
     <!-- Seções -->
     <main class="space-y-20 pb-20">
