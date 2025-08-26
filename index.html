@@ -21,12 +21,13 @@ body {
 /* Mobile: ocupa toda a largura e altura acompanha conteúdo */
 @media (max-width: 768px) {
   .bg-mobile {
-    position: absolute; /* acompanha conteúdo */
     width: 100%;
-    height: auto; /* altura ajusta conforme conteúdo */
     min-height: 100vh;
-    background-size: 100% auto;
-    background-position: top center;
+    background-image: url('a86dcd05-3348-4797-9ee3-cf7b085b5a08.png');
+    background-size: auto; /* mantém o tamanho real da largura da imagem */
+    background-repeat: repeat-y; /* repete só no comprimento */
+    background-position: top center; /* centraliza a imagem no meio */
+    background-attachment: scroll; /* rola junto com o conteúdo */
   }
 }
   </style>
