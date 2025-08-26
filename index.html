@@ -8,14 +8,14 @@
 </head>
 <body class="relative min-h-screen text-white font-sans">
 
-  <!-- Imagem de fundo -->
+<!-- Imagem de fundo -->
   <div 
-    class="absolute inset-0 bg-cover bg-center"
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat"
     style="background-image: url('imagens/bgfimagem.jpg');">
   </div>
 
-  <!-- Camada escura para contraste -->
-  <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+  <!-- Camada escura (mais leve) -->
+  <div class="absolute inset-0 bg-black bg-opacity-15"></div>
 
   <!-- Conteúdo -->
   <div class="relative z-10">
@@ -33,7 +33,9 @@
 
     <!-- Header -->
     <header id="home" class="flex flex-col justify-center items-center text-center min-h-screen px-6">
-      <img src="imagens/logo.png" alt="Logo BGF Japan" class="w-40 mb-4">
+      <!-- Logo maior e responsiva -->
+      <img src="imagens/logo.png" alt="Logo BGF Japan" 
+           class="w-60 md:w-72 lg:w-80 mb-4">
       <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">BGF Japan</h1>
       <p class="mt-3 text-lg md:text-xl max-w-2xl drop-shadow-md">
         Seu acesso fácil e seguro ao Mercari Japão para fãs de K-pop
