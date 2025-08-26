@@ -6,22 +6,27 @@
   <title>BGF Japan</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Padrão: PC e tablets → imagem responsiva (cover) */
-    .bg-custom {
-      background-image: url('imagens/bgfimagem.jpg');
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: cover;
-    }
+   /* Desktop e tablets → fundo normal, responsivo */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  background-image: url('imagens/bgfimagem.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: scroll; /* acompanha a rolagem */
+}
 
-    /* Mobile → mantém tamanho original (contain) */
-    @media (max-width: 768px) {
-      .bg-custom {
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
-      }
-    }
+/* Mobile → ocupa toda a largura, altura acompanha conteúdo */
+@media (max-width: 768px) {
+  body {
+    background-size: 100% auto; /* largura 100%, altura proporcional */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: local; /* rola junto com conteúdo */
+  }
+}
   </style>
 </head>
 <body class="relative min-h-screen text-white font-sans">
