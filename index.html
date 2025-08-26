@@ -18,13 +18,15 @@ body {
   background-attachment: scroll; /* acompanha a rolagem */
 }
 
-/* Mobile → ocupa toda a largura, altura acompanha conteúdo */
+/* Mobile: ocupa toda a largura e altura acompanha conteúdo */
 @media (max-width: 768px) {
-  body {
-    background-size: 100% auto; /* largura 100%, altura proporcional */
+  .bg-mobile {
+    position: absolute; /* acompanha conteúdo */
+    width: 100%;
+    height: auto; /* altura ajusta conforme conteúdo */
+    min-height: 100vh;
+    background-size: 100% auto;
     background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: local; /* rola junto com conteúdo */
   }
 }
   </style>
